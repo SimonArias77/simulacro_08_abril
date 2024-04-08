@@ -1,0 +1,171 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION */
+.header {
+  height: 30vh;
+  background-image: url("../../public/img/Misviajes.png");
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(0, 0, 0, 0.435);
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item i,
+h1 {
+  color: white;
+}
+
+.item--logo img {
+  width: 60px;
+}
+
+.item--links {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar__item-link {
+  display: flex;
+  gap: 1rem;
+}
+
+/* SECCIONES */
+/* MIS VIAJES */
+
+.container {
+  margin: 3rem auto;
+  max-width: 1300px;
+}
+
+.contenedorpadre {
+  position: relative;
+}
+
+.contenedorhijo {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.435);
+  width: 100%;
+}
+
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  height: 70vh;
+}
+
+.img1 {
+  background-image: url("../../public/img/santamarta.jpeg");
+  background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.img2 {
+  background-image: url("../../public/img/antioquia.jpg");
+  background-size: cover;
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+.img3 {
+  background-image: url("../../public/img/Amazonas.jpg");
+  background-size: cover;
+  grid-column: 4 / 4;
+  grid-row: 1 / 3;
+}
+
+.img4 {
+  background-image: url("../../public/img/Santander.jpg");
+  background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 4 / 7;
+}
+
+.img5 {
+  background-image: url("../../public/img/arauca2.jpg");
+  background-size: cover;
+  grid-column: 3 / 5;
+  grid-row: 3 / 7;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.title h3 {
+  background: rgb(0, 0, 0, 0.435);
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.container_images {
+  display: flex;
+  margin: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid greenyellow;
+}
+
+.container_images img {
+  width: 300px;
+}
+
+.container_images-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 12px;
+}
+
+.container_images-info-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.publicidad {
+  display: flex;
+  gap: 2rem;
+}
+
+.publicidad__ad {
+  width: 28%;
+}
+
+footer {
+  height: 20vh;
+  background: black;
+  display: flex;
+  justify-content: end;
+  color: white;
+  padding: 20px 0;
+}
+
+form {
+  width: 400px;
+  padding: 12px;
+}
+
+form input,
+button {
+  padding: 12px;
+}
